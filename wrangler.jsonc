@@ -1,0 +1,10 @@
+{
+  // Static-assets-only Worker. No server code — Cloudflare serves the files
+  // in ./public directly from its edge. Deploy with `npx wrangler deploy`,
+  // or connect this repo to Cloudflare for auto-deploy on push to main.
+  "name": "wild-transformations-brand-guide",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./public"
+  }
+}
