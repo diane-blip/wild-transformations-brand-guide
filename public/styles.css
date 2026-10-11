@@ -284,6 +284,8 @@ ul.clean li::before{
   color:var(--cream);
 }
 .statement .hl{color:var(--aqua);font-style:italic;}
+.positioning{display:grid;gap:clamp(40px,6vw,64px);}
+.positioning .statement{margin:0;}
 .bigquote{
   font-family:var(--serif);
   font-size:clamp(24px,3.4vw,40px);
