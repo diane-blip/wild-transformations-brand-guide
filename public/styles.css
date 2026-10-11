@@ -75,8 +75,8 @@ section{position:relative;}
   margin:0 auto;
   padding:0 var(--gutter);
 }
-.band{padding:clamp(80px,11vw,150px) 0;}
-.band--tight{padding:clamp(56px,7vw,90px) 0;}
+.band{padding-block:clamp(80px,11vw,150px);}
+.band--tight{padding-block:clamp(56px,7vw,90px);}
 
 /* alternating grounds */
 .ground-ink{background:var(--ink);}
@@ -132,7 +132,6 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:.01em;}
   font-size:clamp(19px,2.1vw,24px);
   line-height:1.6;
   color:var(--text);
-  max-width:62ch;
 }
 .ground-paper .lede{color:#3a2c4e;}
 p{ text-wrap:pretty; }
@@ -183,7 +182,7 @@ em{color:var(--aqua);font-style:italic;}
 .cover .sub{
   font-size:clamp(17px,2vw,21px);
   color:var(--text-dim);
-  max-width:50ch;margin:30px auto 0;font-style:italic;
+  margin:30px 0 0;font-style:italic;
 }
 .cover-foot{
   margin-top:clamp(48px,8vw,90px);
@@ -283,7 +282,6 @@ ul.clean li::before{
   font-size:clamp(26px,3.8vw,46px);
   line-height:1.28;
   color:var(--cream);
-  max-width:24ch;
 }
 .statement .hl{color:var(--aqua);font-style:italic;}
 .bigquote{
@@ -292,7 +290,7 @@ ul.clean li::before{
   line-height:1.34;
   color:var(--white);
   text-align:center;
-  max-width:20ch;margin:0 auto;
+  margin:0;
 }
 .bigquote .mark{color:var(--teal);}
 
@@ -404,7 +402,7 @@ ul.clean li::before{
 .swatch .vals span{color:var(--text-faint);}
 
 .ratio-row{display:flex;gap:0;border-radius:4px;overflow:hidden;border:1px solid var(--hair-soft);height:56px;margin-top:8px;}
-.ratio-row div{display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;}
+.ratio-row div{display:flex;align-items:center;justify-content:center;padding-inline:8px;text-align:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;}
 
 /* ============================================================
    TYPOGRAPHY
@@ -538,7 +536,7 @@ ul.clean li::before{
   body{font-size:11.5pt;line-height:1.5;}
   .reveal{opacity:1 !important;transform:none !important;}
   section{break-inside:avoid;}
-  .band{padding:0.5in 0;}
+  .band{padding-block:0.5in;}
   .cover{min-height:auto;page-break-after:always;background:#1c0738 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
   .ground-ink,.ground-deep,.ground-purple{background:#fff !important;}
   .ground-ink,.ground-deep,.ground-purple,
