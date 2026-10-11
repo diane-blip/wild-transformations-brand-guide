@@ -404,7 +404,7 @@ ul.clean li::before{
 .swatch .vals span{color:var(--text-faint);}
 
 .ratio-row{display:flex;gap:0;border-radius:4px;overflow:hidden;border:1px solid var(--hair-soft);height:56px;margin-top:8px;}
-.ratio-row div{display:flex;align-items:center;justify-content:center;padding-inline:8px;text-align:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;}
+.ratio-row div{display:flex;align-items:center;justify-content:center;padding-inline:16px;text-align:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;}
 
 /* ============================================================
    TYPOGRAPHY
@@ -526,6 +526,8 @@ ul.clean li::before{
   .offer .price{text-align:left;}
   .type-spec .row{grid-template-columns:1fr;gap:10px;}
   .cols-2 .frame.tall{max-width:420px;}
+  .ratio-row{flex-direction:column;height:auto;}
+  .ratio-row div{flex:none !important;padding-block:12px;}
 }
 
 /* ============================================================
